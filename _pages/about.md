@@ -16,7 +16,7 @@ My areas of interest are -
 
 1) Reinforcement Learning <br>
 2) Multi-agent Systems <br>   
-3) Control Theory <br>  
+3) Control Theory 
 4) Robotics <br> 
 5) Applied Mathematics
 
