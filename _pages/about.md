@@ -14,10 +14,13 @@ Research Goals
 I enjoy applying innovative methods to interdisciplinary fields, emphasizing developing mathematical intuition behind every approach. I love to formulate and solve mathematically intricate problems and arrive at solutions to problems through simulations and experiments. <br>
 My areas of interest are -
 
-1) Reinforcement Learning <br>
-2) Multi-agent Systems <br>   
-3) Control Theory 
-4) Robotics <br> 
-5) Applied Mathematics
+<ol>
+  <li>Reinforcement Learning</li> 
+  <li> Multi-agent Systems </li>   
+  <li> Control Theory </li>
+  <li> Robotics </li>
+  <li> Applied Mathematics </li>
+</ol>
+
 
 Please contact me if you want to collaborate on research projects in any related fields.
