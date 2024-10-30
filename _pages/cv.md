@@ -37,7 +37,7 @@ Research Experience
 * **Job-Shop Scheduling Using Quantum Annealing**  
   *Prof. Bogdan Epureanu | Epureanu Research Group*  
   University of Michigan, USA  
-  January 2024 – Present  
+  January – August 2024  
   - Formulated the Job-Shop Scheduling Problem as a Quadratic Unconstrained Binary Optimization (QUBO) Problem through conversion to a linear program followed by specific binary encoding of continuous variables for quantum annealing solvers
   - Determined various methods for constraint reduction such as removing redundancies, formulating and using the dual problem
   - Solved the 2 machines-2 jobs, and 3 machines-3 jobs problem on the D-Wave Advantage 4.1 Quantum Computer, using the hybrid and quantum annealers
