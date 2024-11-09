@@ -25,4 +25,10 @@ My areas of interest are -
 
 Please contact me if you want to collaborate on research projects in any related fields.
 
-<script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=0htbO1aW3-I8XHiS_BNNqtV-BaMFOWnlRk40-OGO_R0"></script>
+<!-- Visitor Location Globe -->
+<h2>Visitor Locations</h2>
+<div style="text-align: center;">
+  <div style="width: 300px; height: 300px; margin: auto;">
+    <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=0htbO1aW3-I8XHiS_BNNqtV-BaMFOWnlRk40-OGO_R0"></script>
+  </div>
+</div>
