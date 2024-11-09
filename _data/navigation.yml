@@ -6,7 +6,7 @@
 
 main:
   - title: "Research Experience"
-    url: /talks/
+    url: /research/
 
   - title: "Publications"
     url: /publications/   
