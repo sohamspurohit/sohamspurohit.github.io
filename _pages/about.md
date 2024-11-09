@@ -67,6 +67,6 @@ Please contact me if you want to collaborate on research projects in any related
 <h2>Visitor Locations</h2>
 <div style="text-align: center;">
   <div style="width: 200px; height: 300px; margin: auto;">
-    <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=0htbO1aW3-I8XHiS_BNNqtV-BaMFOWnlRk40-OGO_R0"></script>
+    <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=080808&w=a&t=tt&d=0htbO1aW3-I8XHiS_BNNqtV-BaMFOWnlRk40-OGO_R0&co=ffffff&cmo=3acc3a&cmn=ff5353&ct=808080'></script>
   </div>
 </div>
