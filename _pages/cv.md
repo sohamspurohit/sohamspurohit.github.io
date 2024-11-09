@@ -11,7 +11,7 @@ redirect_from:
 
 <!-- Embed PDF Viewer -->
 <div style="text-align: center;">
-  <iframe src="\files\paper1.pdf" width="100%" height="800px" style="border: none;">
+  <iframe src="\files\CV (7).pdf" width="100%" height="800px" style="border: none;">
     Your browser does not support PDFs. Please download the PDF to view it: 
     <a href="/assets/cv.pdf">Download CV</a>.
   </iframe>
