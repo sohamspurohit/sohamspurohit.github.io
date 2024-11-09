@@ -22,13 +22,51 @@ My areas of interest are -
   <li> Applied Mathematics </li>
 </ul>
 
+## Organizations I’ve Worked With
+
+I’ve had the privilege of working with several leading institutions and research groups, where I contributed to projects in robotics, control theory, and multi-agent systems.
+
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+  <!-- IIT Bombay -->
+  <div style="width: 30%; text-align: center;">
+    <img src="/images/iitb.png" alt="IIT Bombay" style="width: 100%; height: auto;">
+    <p>Indian Institute of Technology Bombay</p>
+  </div>
+
+  <!-- University of Michigan -->
+  <div style="width: 30%; text-align: center;">
+    <img src="/images/umich.png" alt="University of Michigan" style="width: 100%; height: auto;">
+    <p>University of Michigan</p>
+  </div>
+
+  <!-- University of Toronto -->
+  <div style="width: 30%; text-align: center;">
+    <img src="/images/uoft.png" alt="University of Toronto" style="width: 100%; height: auto;">
+    <p>University of Toronto</p>
+  </div>
+
+  <!-- Automotive Research Center -->
+  <div style="width: 30%; text-align: center;">
+    <img src="/images/arc.png" alt="ARC" style="width: 100%; height: auto;">
+    <p>Automotive Research Center</p>
+  </div>
+
+  <!-- Isuzu Technical Center of America -->
+  <div style="width: 30%; text-align: center;">
+    <img src="/images/isuzu.png" alt="ITCA" style="width: 100%; height: auto;">
+    <p>Isuzu Technical Center of America</p>
+  </div>
+
+  </div>
+</div>
+
 
 Please contact me if you want to collaborate on research projects in any related fields.
 
-<!-- Visitor Location Globe -->
+
 <h2>Visitor Locations</h2>
 <div style="text-align: center;">
-  <div style="width: 300px; height: 300px; margin: auto;">
+  <div style="width: 200px; height: 300px; margin: auto;">
     <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=0htbO1aW3-I8XHiS_BNNqtV-BaMFOWnlRk40-OGO_R0"></script>
   </div>
 </div>
