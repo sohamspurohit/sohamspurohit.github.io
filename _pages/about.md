@@ -24,3 +24,5 @@ My areas of interest are -
 
 
 Please contact me if you want to collaborate on research projects in any related fields.
+
+<script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=0htbO1aW3-I8XHiS_BNNqtV-BaMFOWnlRk40-OGO_R0"></script>
