@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a Ph.D. student in Mechanical Engineering at the University of Michigan - Ann Arbor. I work in the [Epureanu Research Group](https://epureanu.engin.umich.edu/) and the [Automotive Research Center](https://arc.engin.umich.edu/). I obtained an M.S. in Robotics from the University of Michigan - Ann Arbor, and a B.Tech. in Mechanical Engineering from the Indian Institute of Technology Bombay (IITB).
+I am a Ph.D. student in Mechanical Engineering at the University of Michigan - Ann Arbor. I work in the [Epureanu Research Group](https://epureanu.engin.umich.edu/) and the [Automotive Research Center](https://arc.engin.umich.edu/). I obtained an M.S. in Robotics from the University of Michigan - Ann Arbor, and a B.Tech. in Mechanical Engineering from the Indian Institute of Technology Bombay (IITB). In my free time, I love playing (table tennis, squash, football) and watching (almost all) sports. I also like reading fiction and listening to rock music.
 
 Research Goals
 ===
