@@ -1,0 +1,28 @@
+{% include base_path %}
+
+{% if post.id %}
+  {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
+{% else %}
+  {% assign title = post.title %}
+{% endif %}
+
+<article class="research-card" itemscope itemtype="http://schema.org/CreativeWork">
+  <div class="research-card__header">
+    <h2 class="research-card__title" itemprop="headline">
+      {% if post.link %}
+        <a href="{{ post.link }}">{{ title }}</a> <a href="{{ base_path }}{{ post.url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
+      {% else %}
+        <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
+      {% endif %}
+    </h2>
+    <div class="research-card__meta">
+      {% if post.type %}<span class="research-card__date"><i class="fa fa-calendar" aria-hidden="true"></i> {{ post.type }}</span>{% endif %}
+      {% if post.venue %}<span class="research-card__venue"><i class="fa fa-building" aria-hidden="true"></i> {{ post.venue }}{% if post.location %}, {{ post.location }}{% endif %}</span>{% endif %}
+    </div>
+  </div>
+  {% if post.excerpt %}
+  <div class="research-card__body" itemprop="description">
+    {{ post.excerpt | markdownify }}
+  </div>
+  {% endif %}
+</article>

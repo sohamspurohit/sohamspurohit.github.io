@@ -1,3 +1,16 @@
 <script src="{{ base_path }}/assets/js/main.min.js"></script>
-
+<script>
+(function() {
+  var themeKey = 'site-theme';
+  function getPreferred() { return localStorage.getItem(themeKey) || 'light'; }
+  function setTheme(t) {
+    document.documentElement.setAttribute('data-theme', t);
+    localStorage.setItem(themeKey, t);
+  }
+  setTheme(getPreferred());
+  document.getElementById('theme-toggle') && document.getElementById('theme-toggle').addEventListener('click', function() {
+    setTheme(document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
+  });
+})();
+</script>
 {% include analytics.html %}
