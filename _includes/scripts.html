@@ -5,14 +5,16 @@
   function setTheme(t) {
     document.documentElement.setAttribute('data-theme', t);
     localStorage.setItem(themeKey, t);
+    var cb = document.getElementById('theme-switch');
+    if (cb) cb.checked = (t === 'dark');
   }
-  document.addEventListener('click', function(e) {
-    var btn = e.target.closest && e.target.closest('.theme-toggle');
-    if (btn) {
-      e.preventDefault();
-      setTheme(document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
-    }
-  });
+  var cb = document.getElementById('theme-switch');
+  if (cb) {
+    cb.checked = (document.documentElement.getAttribute('data-theme') === 'dark');
+    cb.addEventListener('change', function() {
+      setTheme(this.checked ? 'dark' : 'light');
+    });
+  }
 })();
 </script>
 <script>

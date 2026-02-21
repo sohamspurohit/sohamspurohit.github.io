@@ -146,43 +146,62 @@
   background: var(--text);
 }
 
-/* Theme toggle button (override greedy-nav button styles) */
-.greedy-nav .theme-toggle,
-.theme-toggle {
-  position: static !important;
-  display: inline-flex !important;
+/* Theme toggle switch (light = off, dark = on) */
+.masthead__menu-item--theme {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  width: 36px !important;
-  height: 36px !important;
-  padding: 0 !important;
-  margin: 0 0.5em 0 0 !important;
-  border: 1px solid var(--border-color, #e8e8e8) !important;
-  border-radius: 6px !important;
-  background: var(--card-bg, #fafafa) !important;
-  color: var(--text, #2d3748) !important;
+}
+.theme-switch {
+  position: relative;
+  display: inline-block;
+  width: 44px;
+  height: 24px;
+  flex-shrink: 0;
   cursor: pointer;
-  outline: none;
-  transition: background 0.2s, border-color 0.2s, color 0.2s;
+  margin: 0 0.25rem 0 0;
 }
-.greedy-nav .theme-toggle:hover,
-.theme-toggle:hover {
-  background: var(--bg-secondary, #f0f0f0) !important;
-  border-color: var(--border-hover, #d0d0d0) !important;
+.theme-switch__input {
+  opacity: 0;
+  width: 0;
+  height: 0;
 }
-.theme-toggle svg {
-  width: 18px;
+.theme-switch__slider {
+  position: absolute;
+  inset: 0;
+  background: var(--border-hover, #c0c0c0);
+  border-radius: 24px;
+  transition: background 0.25s ease;
+}
+.theme-switch__slider::before {
+  content: "";
+  position: absolute;
   height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+  transition: transform 0.25s ease;
 }
-.theme-toggle .icon-sun { display: none; }
-.theme-toggle .icon-moon { display: inline-block; }
-[data-theme="dark"] .theme-toggle .icon-sun { display: inline-block; }
-[data-theme="dark"] .theme-toggle .icon-moon { display: none; }
-[data-theme="dark"] .greedy-nav .theme-toggle,
-[data-theme="dark"] .theme-toggle {
-  background: var(--card-bg) !important;
-  color: var(--text) !important;
-  border-color: var(--border-color) !important;
+.theme-switch__input:checked + .theme-switch__slider {
+  background: var(--link, #52adc8);
+}
+.theme-switch__input:checked + .theme-switch__slider::before {
+  transform: translateX(20px);
+}
+.theme-switch__input:focus-visible + .theme-switch__slider {
+  outline: 2px solid var(--link);
+  outline-offset: 2px;
+}
+[data-theme="dark"] .theme-switch__slider {
+  background: var(--border-color);
+}
+[data-theme="dark"] .theme-switch__input:checked + .theme-switch__slider {
+  background: var(--link);
+}
+[data-theme="dark"] .theme-switch__slider::before {
+  background: var(--bg-secondary);
 }
 
 /* --- Home page: organization logos --- */

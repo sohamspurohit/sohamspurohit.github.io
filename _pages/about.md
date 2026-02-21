@@ -7,27 +7,22 @@ redirect_from:
   - /about.html
 ---
 
-I am a Ph.D. student in Mechanical Engineering at the University of Michigan - Ann Arbor. I work in the [Epureanu Research Group](https://epureanu.engin.umich.edu/) and the [Automotive Research Center](https://arc.engin.umich.edu/). I obtained an M.S. in Robotics from the University of Michigan - Ann Arbor, and a B.Tech. in Mechanical Engineering from the Indian Institute of Technology Bombay (IITB). In my free time, I love playing (table tennis, squash, football) and watching (almost all) sports. I also like reading fiction and listening to rock music.
+I am a Ph.D. student in Mechanical Engineering at the University of Michigan, Ann Arbor, where I am part of the [Epureanu Research Group](https://epureanu.engin.umich.edu/) and the [Automotive Research Center](https://arc.engin.umich.edu/). I hold an M.S. in Robotics from the University of Michigan and a B.Tech. in Mechanical Engineering from the Indian Institute of Technology Bombay.
 
-## Research Goals
+My work sits at the intersection of **dynamics**, **control**, and **decision-making**: I am interested in how we can design and analyze systems that learn, coordinate, and adapt—whether in manufacturing, robotics, or multi-agent settings. I draw on tools from reinforcement learning, nonlinear and optimal control, and applied mathematics, with an emphasis on rigor and interpretability.
 
-I enjoy applying innovative methods to interdisciplinary fields, emphasizing developing mathematical intuition behind every approach. I love to formulate and solve mathematically intricate problems and arrive at solutions through simulations and experiments.
+## Research interests
 
-My areas of interest are:
+- **Reinforcement learning** — sequential decision-making and policy optimization  
+- **Multi-agent systems** — coordination, cooperation, and emergent behavior  
+- **Control theory** — nonlinear dynamics, reachability, and observer design  
+- **Robotics** — perception, planning, and applications in mobility and manipulation  
 
-- **Reinforcement Learning**
-- **Multi-agent Systems**
-- **Control Theory**
-- **Robotics**
-- **Applied Mathematics**
+## Experience and affiliations
 
-## Organizations I've Worked With
+I have had the opportunity to work with research and industry groups across academia and R&D, including the **Indian Institute of Technology Bombay**, the **University of Michigan**, the **University of Toronto**, the **Automotive Research Center**, and the **Isuzu Technical Center of America**. These roles have spanned theory, simulation, and implementation in robotics and control.
 
-I've had the privilege of working with several leading institutions and research groups, where I contributed to projects in robotics, control theory, and multi-agent systems.
-
-{% include org-logos.html %}
-
-Please contact me if you would like to collaborate on research projects in any of these areas.
+**[Download my CV (PDF)](https://drive.google.com/file/d/13BfqWtPbbt24fZXGU2n6S3Mi52SGiyiX/view?usp=sharing)** · I am open to collaboration and discussion on related research. Please reach out via the links in the sidebar.
 
 <div class="visitor-map">
   <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=080808&w=a&t=tt&d=0htbO1aW3-I8XHiS_BNNqtV-BaMFOWnlRk40-OGO_R0&co=ffffff&cmo=3acc3a&cmn=ff5353&ct=808080'></script>
