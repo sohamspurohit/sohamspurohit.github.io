@@ -12,7 +12,10 @@ layout: compress
   </head>
 
   <body>
-
+    <div id="interactive-bg" class="interactive-bg" aria-hidden="true">
+      <canvas id="bg-canvas"></canvas>
+    </div>
+    <div class="site-content">
     {% include browser-upgrade.html %}
     {% include masthead.html %}
 
@@ -26,6 +29,6 @@ layout: compress
     </div>
 
     {% include scripts.html %}
-
+    </div>
   </body>
 </html>

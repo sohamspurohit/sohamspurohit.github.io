@@ -25,13 +25,7 @@ My areas of interest are:
 
 I've had the privilege of working with several leading institutions and research groups, where I contributed to projects in robotics, control theory, and multi-agent systems.
 
-<div class="org-logos">
-  <div class="org-logo"><img src="/images/iitb.png" alt="IIT Bombay" /><span>Indian Institute of Technology Bombay</span></div>
-  <div class="org-logo"><img src="/images/umich.png" alt="University of Michigan" /><span>University of Michigan</span></div>
-  <div class="org-logo"><img src="/images/uoft.png" alt="University of Toronto" /><span>University of Toronto</span></div>
-  <div class="org-logo"><img src="/images/arc.png" alt="ARC" /><span>Automotive Research Center</span></div>
-  <div class="org-logo"><img src="/images/isuzu.png" alt="ITCA" /><span>Isuzu Technical Center of America</span></div>
-</div>
+{% include org-logos.html %}
 
 Please contact me if you would like to collaborate on research projects in any of these areas.
 
