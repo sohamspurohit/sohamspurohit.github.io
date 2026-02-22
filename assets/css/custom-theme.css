@@ -21,22 +21,22 @@
   --bg-blob-3: #f8f4e8;
 }
 
-/* --- Dark theme --- */
+/* --- Dark theme (black bg, white text) --- */
 [data-theme="dark"] {
-  --bg: #1a1d23;
-  --bg-secondary: #252830;
-  --text: #e8eaed;
-  --text-muted: #9aa0a6;
-  --border-color: #3a3f47;
-  --border-hover: #4e545c;
-  --card-bg: #252830;
-  --link: #6ec1e0;
-  --link-hover: #8ed4ef;
-  --masthead-bg: #1a1d23;
+  --bg: #000000;
+  --bg-secondary: #1a1a1a;
+  --text: #ffffff;
+  --text-muted: #b0b0b0;
+  --border-color: #333333;
+  --border-hover: #444444;
+  --card-bg: #1a1a1a;
+  --link: #7dd3fc;
+  --link-hover: #bae6fd;
+  --masthead-bg: #000000;
   --sidebar-bg: transparent;
-  --bg-blob-1: #1e2830;
-  --bg-blob-2: #2a2430;
-  --bg-blob-3: #282820;
+  --bg-blob-1: #0d1f26;
+  --bg-blob-2: #1a1a26;
+  --bg-blob-3: #1f1a0d;
 }
 
 /* --- Interactive background --- */
@@ -64,7 +64,7 @@
   transition: background 0.3s ease;
 }
 [data-theme="dark"] .site-content {
-  background: rgba(26, 29, 35, 0.9);
+  background: rgba(0, 0, 0, 0.95);
 }
 
 [data-theme="dark"] body {
@@ -146,11 +146,30 @@
   background: var(--text);
 }
 
-/* Theme toggle at right end of masthead: sun – switch – moon */
+[data-theme="dark"] .page__footer {
+  background-color: var(--bg-secondary);
+  border-top-color: var(--border-color);
+  color: var(--text);
+}
+[data-theme="dark"] .page__footer a {
+  color: var(--link);
+}
+[data-theme="dark"] .page__footer a:hover {
+  color: var(--link-hover);
+}
+[data-theme="dark"] .page__footer .fas,
+[data-theme="dark"] .page__footer .fab,
+[data-theme="dark"] .page__footer .far,
+[data-theme="dark"] .page__footer .fal {
+  color: var(--text-muted);
+}
+
+/* Theme toggle at right end of masthead: sun – switch – moon (keep on one line) */
 .masthead__menu {
   display: flex;
   align-items: center;
   width: 100%;
+  flex-wrap: nowrap;
 }
 .theme-toggle-wrap {
   display: flex;
@@ -159,6 +178,7 @@
   margin-left: auto;
   padding-left: 1rem;
   flex-shrink: 0;
+  white-space: nowrap;
 }
 .theme-icon {
   display: inline-flex;
@@ -301,6 +321,10 @@
   margin-left: 0;
 }
 @media (min-width: 1024px) {
+  .page__footer {
+    margin-left: 260px;
+    width: calc(100% - 260px);
+  }
   .page__footer footer {
     margin-left: 0;
   }
