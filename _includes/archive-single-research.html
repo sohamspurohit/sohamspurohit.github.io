@@ -5,6 +5,10 @@
 {% else %}
   {% assign title = post.title %}
 {% endif %}
+{% assign flag = '' %}
+{% if post.country == 'USA' %}{% assign flag = '🇺🇸' %}{% endif %}
+{% if post.country == 'India' %}{% assign flag = '🇮🇳' %}{% endif %}
+{% if post.country == 'Canada' %}{% assign flag = '🇨🇦' %}{% endif %}
 
 <article class="research-card" itemscope itemtype="http://schema.org/CreativeWork">
   <div class="research-card__header">
@@ -16,6 +20,7 @@
       {% endif %}
     </h2>
     <div class="research-card__meta">
+      {% if flag != '' %}<span class="research-card__flag" title="{{ post.country }}">{{ flag }}</span>{% endif %}
       {% if post.type %}<span class="research-card__date"><i class="fa fa-calendar" aria-hidden="true"></i> {{ post.type }}</span>{% endif %}
       {% if post.venue %}<span class="research-card__venue"><i class="fa fa-building" aria-hidden="true"></i> {{ post.venue }}{% if post.location %}, {{ post.location }}{% endif %}</span>{% endif %}
     </div>

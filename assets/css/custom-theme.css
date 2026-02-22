@@ -146,11 +146,30 @@
   background: var(--text);
 }
 
-/* Theme toggle switch (light = off, dark = on) */
-.masthead__menu-item--theme {
+/* Theme toggle at right end of masthead: sun – switch – moon */
+.masthead__menu {
   display: flex;
   align-items: center;
+  width: 100%;
 }
+.theme-toggle-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: auto;
+  padding-left: 1rem;
+  flex-shrink: 0;
+}
+.theme-icon {
+  display: inline-flex;
+  color: var(--text-muted, #666);
+  line-height: 1;
+}
+[data-theme="dark"] .theme-icon {
+  color: var(--text-muted);
+}
+.theme-icon--sun { opacity: 0.9; }
+.theme-icon--moon { opacity: 0.7; }
 .theme-switch {
   position: relative;
   display: inline-block;
@@ -158,7 +177,6 @@
   height: 24px;
   flex-shrink: 0;
   cursor: pointer;
-  margin: 0 0.25rem 0 0;
 }
 .theme-switch__input {
   opacity: 0;
@@ -203,6 +221,16 @@
 [data-theme="dark"] .theme-switch__slider::before {
   background: var(--bg-secondary);
 }
+@media (max-width: 1023px) {
+  .theme-toggle-wrap {
+    padding-left: 0.5rem;
+  }
+}
+/* Keep theme toggle visible and to the left of hamburger on small screens */
+.greedy-nav {
+  flex: 1 1 auto;
+  min-width: 0;
+}
 
 /* --- Home page: organization logos --- */
 .org-logos {
@@ -239,13 +267,41 @@
   }
 }
 
-/* Visitor map */
+/* Visitor map – smaller, no overlap */
 .visitor-map {
   margin-top: 2em;
+  margin-bottom: 2em;
   text-align: center;
+  max-width: 320px;
+  max-height: 220px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
 }
 .visitor-map > div,
 .visitor-map iframe {
   max-width: 100%;
+  max-height: 220px;
   margin: 0 auto;
+  transform-origin: top left;
+}
+
+/* Footer and main content – prevent overlap with sidebar and map */
+#main {
+  padding-bottom: 5em;
+}
+.page__footer {
+  z-index: 2;
+}
+.sidebar {
+  z-index: 15;
+}
+.page__footer-follow,
+.page__footer-copyright {
+  margin-left: 0;
+}
+@media (min-width: 1024px) {
+  .page__footer footer {
+    margin-left: 0;
+  }
 }
