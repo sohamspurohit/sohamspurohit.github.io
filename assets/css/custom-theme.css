@@ -173,6 +173,14 @@ html[data-theme="dark"] .theme-icon {
   color: var(--link-hover);
 }
 
+[data-theme="dark"] .sidebar__right.recent-updates {
+  background: var(--bg-secondary);
+  border-left-color: var(--border-color);
+}
+[data-theme="dark"] .recent-updates__meta {
+  color: var(--text-muted);
+}
+
 /* Theme toggle at right end of masthead: sun – switch – moon (keep on one line) */
 .masthead__menu {
   display: flex;
@@ -338,17 +346,89 @@ html[data-theme="dark"] .theme-icon {
   display: none;
 }
 
-/* Main content and sidebar */
+/* Main content and sidebars */
 #main {
   padding-bottom: 2em;
 }
 .sidebar {
   z-index: 15;
 }
+
+/* Right sidebar: Recent Updates (fixed like left panel on desktop) */
+.sidebar__right.recent-updates {
+  font-size: 0.9rem;
+  background: var(--bg-secondary, #f8f9fa);
+}
 @media (min-width: 1024px) {
+  .sidebar__right.recent-updates {
+    position: fixed;
+    top: 70px;
+    right: 0;
+    width: 260px;
+    max-width: 260px;
+    height: calc(100vh - 70px);
+    overflow-y: auto;
+    z-index: 14;
+    padding: 1rem 1rem 2rem;
+    border-left: 1px solid var(--border-color, #e8e8e8);
+  }
+}
+@media (max-width: 1023px) {
+  .sidebar__right.recent-updates {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    padding: 1rem;
+    margin-top: 2rem;
+    border-left: none;
+    border-top: 1px solid var(--border-color, #e8e8e8);
+  }
+}
+.recent-updates__title {
+  margin: 0 0 0.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.recent-updates__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.recent-updates__item {
+  margin-bottom: 0.6rem;
+  line-height: 1.35;
+}
+.recent-updates__item a {
+  text-decoration: none;
+}
+.recent-updates__item a:hover {
+  text-decoration: underline;
+}
+.recent-updates__meta {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--text-muted, #666);
+  margin-top: 0.15rem;
+}
+
+/* Archive content: use full width; reserve space for right sidebar (no extra list padding) */
+@media (min-width: 1024px) {
+  .archive {
+    margin-right: 280px;
+  }
+  #main .list__item {
+    padding-right: 0;
+  }
+  /* Let archive list content use full width (fix narrow industry experience / newlines) */
+  #main .list__item .archive__item-excerpt,
+  #main .list__item .archive__item-title {
+    max-width: none;
+  }
   .page__footer {
     margin-left: 260px;
-    width: calc(100% - 260px);
+    margin-right: 280px;
+    width: calc(100% - 260px - 280px);
   }
   .page__footer footer {
     margin-left: 0;

@@ -1,0 +1,13 @@
+{% include base_path %}
+{% assign recent = site.portfolio | concat: site.publications | concat: site.posts | sort: "date" | reverse %}
+<div class="sidebar__right recent-updates">
+  <h3 class="recent-updates__title">Recent Updates</h3>
+  <ul class="recent-updates__list">
+    {% for doc in recent limit: 8 %}
+      <li class="recent-updates__item">
+        <a href="{{ base_path }}{{ doc.url }}">{{ doc.title | default: doc.name }}</a>
+        {% if doc.date %}<span class="recent-updates__meta">{{ doc.date | date: "%b %Y" }}</span>{% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+</div>
