@@ -173,14 +173,6 @@ html[data-theme="dark"] .theme-icon {
   color: var(--link-hover);
 }
 
-[data-theme="dark"] .sidebar__right.recent-updates {
-  background: var(--bg-secondary);
-  border-left-color: var(--border-color);
-}
-[data-theme="dark"] .recent-updates__meta {
-  color: var(--text-muted);
-}
-
 /* Theme toggle at right end of masthead: sun – switch – moon (keep on one line) */
 .masthead__menu {
   display: flex;
@@ -354,40 +346,16 @@ html[data-theme="dark"] .theme-icon {
   z-index: 15;
 }
 
-/* Right sidebar: Recent Updates (fixed like left panel on desktop) */
-.sidebar__right.recent-updates {
+/* Recent Updates: bottom of main (home) page only */
+.recent-updates {
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-color, #e8e8e8);
   font-size: 0.9rem;
-  background: var(--bg-secondary, #f8f9fa);
-}
-@media (min-width: 1024px) {
-  .sidebar__right.recent-updates {
-    position: fixed;
-    top: 70px;
-    right: 0;
-    width: 260px;
-    max-width: 260px;
-    height: calc(100vh - 70px);
-    overflow-y: auto;
-    z-index: 14;
-    padding: 1rem 1rem 2rem;
-    border-left: 1px solid var(--border-color, #e8e8e8);
-  }
-}
-@media (max-width: 1023px) {
-  .sidebar__right.recent-updates {
-    position: relative;
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    padding: 1rem;
-    margin-top: 2rem;
-    border-left: none;
-    border-top: 1px solid var(--border-color, #e8e8e8);
-  }
 }
 .recent-updates__title {
   margin: 0 0 0.75rem;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 600;
 }
 .recent-updates__list {
@@ -396,8 +364,8 @@ html[data-theme="dark"] .theme-icon {
   padding: 0;
 }
 .recent-updates__item {
-  margin-bottom: 0.6rem;
-  line-height: 1.35;
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
 }
 .recent-updates__item a {
   text-decoration: none;
@@ -409,25 +377,17 @@ html[data-theme="dark"] .theme-icon {
   display: block;
   font-size: 0.75rem;
   color: var(--text-muted, #666);
-  margin-top: 0.15rem;
+  margin-top: 0.1rem;
 }
 
-/* Only on home page: reserve space for right sidebar and adjust footer */
-@media (min-width: 1024px) {
-  .site-content--home #main .page {
-    margin-right: 280px;
-  }
-  .site-content--home .page__footer {
-    margin-left: 260px;
-    margin-right: 280px;
-    width: calc(100% - 260px - 280px);
-  }
-  .site-content--home .page__footer footer {
-    margin-left: 0;
-  }
+[data-theme="dark"] .recent-updates {
+  border-top-color: var(--border-color);
+}
+[data-theme="dark"] .recent-updates__meta {
+  color: var(--text-muted);
 }
 
-/* Archive pages (publications, industry, etc.): restore original layout – no right sidebar */
+/* Footer: clear left sidebar on desktop */
 @media (min-width: 1024px) {
   .page__footer {
     margin-left: 260px;

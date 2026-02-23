@@ -1,7 +1,7 @@
 {% include base_path %}
 {% assign recent = site.portfolio | concat: site.publications | concat: site.posts | sort: "date" | reverse %}
-<div class="sidebar__right recent-updates">
-  <h3 class="recent-updates__title">Recent Updates</h3>
+<section class="recent-updates" aria-label="Recent Updates">
+  <h2 class="recent-updates__title">Recent Updates</h2>
   <ul class="recent-updates__list">
     {% for doc in recent limit: 8 %}
       <li class="recent-updates__item">
@@ -10,4 +10,4 @@
       </li>
     {% endfor %}
   </ul>
-</div>
+</section>
