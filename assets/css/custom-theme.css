@@ -346,43 +346,33 @@ html[data-theme="dark"] .theme-icon {
   z-index: 15;
 }
 
-/* Recent Updates: bottom of main (home) page only */
+/* Recent Updates: plain text at bottom of home page content (no panel) */
 .recent-updates {
-  margin-top: 2.5rem;
-  padding-top: 1.5rem;
-  border-top: 1px solid var(--border-color, #e8e8e8);
-  font-size: 0.9rem;
+  margin-top: 2rem;
 }
 .recent-updates__title {
-  margin: 0 0 0.75rem;
-  font-size: 1.1rem;
+  margin: 1em 0 0.5em;
+  font-size: 1em;
   font-weight: 600;
 }
 .recent-updates__list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  margin: 0 0 1em;
+  padding-left: 1.5em;
+  list-style-type: disc;
 }
 .recent-updates__item {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.35em;
   line-height: 1.4;
 }
 .recent-updates__item a {
-  text-decoration: none;
-}
-.recent-updates__item a:hover {
   text-decoration: underline;
 }
 .recent-updates__meta {
-  display: block;
-  font-size: 0.75rem;
+  font-size: 0.9em;
   color: var(--text-muted, #666);
-  margin-top: 0.1rem;
+  margin-left: 0.25em;
 }
 
-[data-theme="dark"] .recent-updates {
-  border-top-color: var(--border-color);
-}
 [data-theme="dark"] .recent-updates__meta {
   color: var(--text-muted);
 }

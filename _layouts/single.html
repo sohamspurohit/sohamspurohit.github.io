@@ -72,6 +72,10 @@ layout: default
       {% if page.share %}{% include social-share.html %}{% endif %}
 
       {% include post_pagination.html %}
+
+      {% if page.url == '/' %}
+        {% include recent-updates.html %}
+      {% endif %}
     </div>
 
     {% if site.comments.provider and page.comments %}
@@ -91,9 +95,5 @@ layout: default
         {% endfor %}
       </div>
     </div>
-  {% endif %}
-
-  {% if page.url == '/' %}
-    {% include recent-updates.html %}
   {% endif %}
 </div>
