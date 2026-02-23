@@ -15,7 +15,7 @@ layout: compress
     <div id="interactive-bg" class="interactive-bg" aria-hidden="true">
       <canvas id="bg-canvas"></canvas>
     </div>
-    <div class="site-content">
+    <div class="site-content {% if page.url == '/' %}site-content--home{% endif %}">
     {% include browser-upgrade.html %}
     {% include masthead.html %}
 

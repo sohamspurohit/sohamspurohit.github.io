@@ -14,7 +14,7 @@ layout: default
   {% endunless %}
 {% endif %}
 
-<div id="main" role="main">
+<div id="main" role="main" class="{% if page.url == '/' %}main--home{% endif %}">
   {% include sidebar.html %}
 
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
@@ -91,5 +91,9 @@ layout: default
         {% endfor %}
       </div>
     </div>
+  {% endif %}
+
+  {% if page.url == '/' %}
+    {% include recent-updates.html %}
   {% endif %}
 </div>

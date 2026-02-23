@@ -412,23 +412,26 @@ html[data-theme="dark"] .theme-icon {
   margin-top: 0.15rem;
 }
 
-/* Archive content: use full width; reserve space for right sidebar (no extra list padding) */
+/* Only on home page: reserve space for right sidebar and adjust footer */
 @media (min-width: 1024px) {
-  .archive {
+  .site-content--home #main .page {
     margin-right: 280px;
   }
-  #main .list__item {
-    padding-right: 0;
-  }
-  /* Let archive list content use full width (fix narrow industry experience / newlines) */
-  #main .list__item .archive__item-excerpt,
-  #main .list__item .archive__item-title {
-    max-width: none;
-  }
-  .page__footer {
+  .site-content--home .page__footer {
     margin-left: 260px;
     margin-right: 280px;
     width: calc(100% - 260px - 280px);
+  }
+  .site-content--home .page__footer footer {
+    margin-left: 0;
+  }
+}
+
+/* Archive pages (publications, industry, etc.): restore original layout – no right sidebar */
+@media (min-width: 1024px) {
+  .page__footer {
+    margin-left: 260px;
+    width: calc(100% - 260px);
   }
   .page__footer footer {
     margin-left: 0;
