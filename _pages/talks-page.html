@@ -1,0 +1,14 @@
+---
+layout: archive
+title: "Talks"
+permalink: /talks/
+author_profile: true
+---
+
+{% include base_path %}
+
+<p class="page__content">Selected talks and presentations.</p>
+
+{% for post in site.talks reversed %}
+  {% include archive-single-talk.html %}
+{% endfor %}
